@@ -1,0 +1,40 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: "Josefin Slab", serif;
+    background-color: #fff; /* or choose a more visible color to test */
+    overflow: hidden;
+  }
+  
+  .App {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .navBar {
+    position: absolute; /* Fixed position */
+    top: 10%; /* Align to the top */
+    left: 2%; /* Align to the left */
+    width: 5%; /* Fixed width, adjust as needed */
+    height: 15%; /* Full viewport height */
+    background-color: #ffffff; /* White background */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start; /* Align items to start from the top */
+    font-size: 1.5rem;
+    line-height: 2.5;
+  }
+  
+  
+  .navBar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .navBar li {
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  

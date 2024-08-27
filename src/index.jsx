@@ -1,10 +1,18 @@
-import './style.css'
-import ReactDOM from 'react-dom/client'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './style.css';
+import NavBar from './components/NavBar';
+import Profile from './components/Profile';
+import Panel from './components/Panel'; // Import the Panel component
 
-const root = ReactDOM.createRoot(document.querySelector('#root'))
+const App = () => {
+  return (
+    <div className="App">
+      <NavBar />
+      <Profile />
+      <Panel />  {/* Use the Panel component here */}
+    </div>
+  );
+};
 
-root.render(
-    <>
-        Soon to be a badass R3F application
-    </>
-)
+ReactDOM.render(<App />, document.getElementById('root'));
