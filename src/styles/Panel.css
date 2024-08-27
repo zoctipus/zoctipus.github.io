@@ -5,7 +5,7 @@
     width: 65%;
     height: 100vh;
     background-color: #ffffff;
-    padding: 20px;
+    padding: 1vw;
     overflow-y: auto;
     box-shadow: -4px 0 8px rgba(255, 255, 255, 0.1);
   }

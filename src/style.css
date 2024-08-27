@@ -19,12 +19,12 @@ body, html {
     width: 5%; /* Fixed width, adjust as needed */
     height: 15%; /* Full viewport height */
     background-color: #ffffff; /* White background */
-    padding: 20px;
+    padding: 2vw;
     display: flex;
     flex-direction: column;
     justify-content: start; /* Align items to start from the top */
-    font-size: 1.5rem;
-    line-height: 2.5;
+    font-size: 1vw;
+    line-height: 3vh;
   }
   
   

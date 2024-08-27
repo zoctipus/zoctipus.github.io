@@ -1,13 +1,29 @@
 import React from 'react';
 import goHuskyImg from '../../public/panel/images/goHusky.png';
 import goHuskyGif from '../../public/panel/videos/goHusky.gif';
-import tychoCakeDecorationImg from '../../public/panel/images/TychoCakeDecoration.png';
-import tychoCakeDecorationGif from '../../public/panel/videos/TychoCakeDecoration.gif';
 import tychoImage from '../../public/panel/images/tycho.png';
 import tychoGif from '../../public/panel/videos/tycho.gif';
+import teleopImage from '../../public/panel/images/teleop.png';
+import teleopGif from '../../public/panel/videos/teleop.gif';
 import '../styles/Projects.css'
 // Define the data fetching function
 export const getProjects = () => [
+  {
+    id: 3,
+    media: { img: teleopImage, gif: teleopGif },
+    title: "Rokoko Glove Teleoperation",
+    year: "2024 July",
+    description: "Teleoperation in Isaac Lab",
+    details:"Teleoperation, Rokoko Glove, ROS",
+  },
+  {
+    id: 2,
+    media: { img: tychoImage, gif: tychoGif },
+    title: "Tycho the Chopticks Robot",
+    year: "2024 March",
+    description: "RL in Isaac Lab",
+    details:"Fine Manipulation, Soft Body, Articulation Object",
+  },
   {
     id: 1,
     media: { img: goHuskyImg, gif: goHuskyGif },
@@ -15,22 +31,6 @@ export const getProjects = () => [
     year: "2023 Sept",
     description: "ML-Agent in Unity",
     details: "\"Husky joyously explores a vibrant UW campus, inviting you to come and play fetch with him\""
-  },
-//   {
-//     id: 2,
-//     media: { img: tychoCakeDecorationImg, gif: tychoCakeDecorationGif },
-//     title: "Tycho the Chopticks Robot",
-//     year: "2024 March",
-//     description: "RL in Isaac Lab",
-//     details:"details",
-//   },
-  {
-    id: 2,
-    media: { img: tychoImage, gif: tychoGif },
-    title: "Tycho the Chopticks Robot",
-    year: "2024 March",
-    description: "RL in Isaac Lab",
-    details:"details",
   },
   // Additional projects can be added here
 ];
