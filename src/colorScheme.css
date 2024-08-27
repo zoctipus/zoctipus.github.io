@@ -1,0 +1,6 @@
+:root {
+    --primary-color: #4CAF50;  /* Primary green color */
+    --secondary-color: #ff6347; /* Secondary tomato color */
+    --background-color: #ffffff; /* Light grey background */
+    --font-main: 'Josefin Slab', serif;
+}

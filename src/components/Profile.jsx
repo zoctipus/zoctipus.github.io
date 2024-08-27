@@ -1,5 +1,5 @@
 import React from 'react';
-import "../styles/Profile.css"
+import "./Profile.css"
 import ProfilePhoto from '../../public/profile/protrait.jpg';
 
 function Profile() {
@@ -8,9 +8,10 @@ function Profile() {
       <img src={ProfilePhoto} alt="Octi Zhang" className="profile-picture" />
       <h1>Octi Zhang</h1>
       <p className="introduction">
-        My interest lies at intersection between AI, Graphics, Physics. 
-        I'm fascinated in creating simulated environments that resembles real world difficulty and constraints,
-         while exploring natural intellectual behavior of agents within these environments
+      My interest lies at the intersection of AI, Graphics, and Physics. 
+      I'm fascinated by creating simulated environments that resembles real world constraints, 
+      and developing intelligent agents to explore within them. 
+
       </p>
       <p className="quote">
         "Beauty is truth, truth beauty,"

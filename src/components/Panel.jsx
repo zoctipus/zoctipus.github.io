@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../styles/Panel.css';
+import './Panel.css';
 import ProjectItem, { getProjects } from './Projects';
 
 class Panel extends Component {

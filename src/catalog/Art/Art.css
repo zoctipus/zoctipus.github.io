@@ -1,0 +1,51 @@
+.art-banner {
+    background-color: rgba(255, 255, 255, 0.0); /* White color with 80% opacity */
+    text-align: center; /* Center the text */
+    width: 100%; /* Full width */
+    padding: 10px 0; /* Add some padding */
+    position: fixed; /* Fix the banner at the top */
+    top: 0; /* Align it to the top */
+    z-index: 1; /* Ensure it stays on top */
+
+}
+
+.art-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the container */
+    overflow-y: scroll;
+    height: 80vh;
+    margin: 0 auto;
+    width: 100vw; /* Ensure it takes full width */
+    padding-top: 15vh;
+    z-index: 0; /* Ensure it stays below the banner */
+}
+
+.art-row {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: center; /* Center items within the row */
+    margin-bottom: 20px;
+    width: 100%; /* Ensure rows take full width */
+    max-width: 80vw; /* Optional: limit the max width */
+    gap: 3vw;
+}
+
+.art-item {
+    text-align: center;
+}
+
+.art-item img {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    max-height: 40vw; /* Increase the max height to scale larger */
+    object-fit: contain; /* Ensure the image fits within the container without cropping */
+    margin: 0 1vw;
+}
+
+.art-item p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+}

@@ -5,14 +5,14 @@ import tychoImage from '../../public/panel/images/tycho.png';
 import tychoGif from '../../public/panel/videos/tycho.gif';
 import teleopImage from '../../public/panel/images/teleop.png';
 import teleopGif from '../../public/panel/videos/teleop.gif';
-import '../styles/Projects.css'
+import './Projects.css'
 // Define the data fetching function
 export const getProjects = () => [
   {
     id: 3,
     media: { img: teleopImage, gif: teleopGif },
     title: "Rokoko Glove Teleoperation",
-    year: "2024 July",
+    year: "2024 June",
     description: "Teleoperation in Isaac Lab",
     details:"Teleoperation, Rokoko Glove, ROS",
   },

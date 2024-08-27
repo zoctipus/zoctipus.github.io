@@ -2,8 +2,8 @@ body, html {
     margin: 0;
     padding: 0;
     height: 100%;
-    font-family: "Josefin Slab", serif;
-    background-color: #fff; /* or choose a more visible color to test */
+    font-family: var(--font-main);
+    background-color: var(--background-color);
     overflow: hidden;
   }
   
@@ -14,11 +14,11 @@ body, html {
   
   .navBar {
     position: absolute; /* Fixed position */
-    top: 10%; /* Align to the top */
+    top: 7%; /* Align to the top */
     left: 2%; /* Align to the left */
     width: 5%; /* Fixed width, adjust as needed */
     height: 15%; /* Full viewport height */
-    background-color: #ffffff; /* White background */
+    background-color: var(--background-color); /* White background */
     padding: 2vw;
     display: flex;
     flex-direction: column;
@@ -26,7 +26,16 @@ body, html {
     font-size: 1vw;
     line-height: 3vh;
   }
-  
+
+  .navBar a {
+    color: #000;  /* Change the color to black or any other color as per your design */
+    text-decoration: none;  /* Removes underline */
+  }
+
+  .navBar a:hover {
+    color: #555;  /* Slightly lighter shade on hover, optional */
+    text-decoration: none;  /* Ensures underline doesn't appear on hover */
+  }
   
   .navBar ul {
     list-style: none;
@@ -38,3 +47,10 @@ body, html {
     cursor: pointer;
   }
   
+  .app-logo {
+    position: absolute;  /* Positioning the logo absolutely */
+    top: 10px;  /* Adjust top margin to align as needed */
+    right: 10px;  /* Adjust right margin to keep the logo at the corner */
+    width: 100px;  /* Specify the size of your logo */
+    height: auto;  /* Maintain aspect ratio */
+  }

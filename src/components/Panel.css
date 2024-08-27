@@ -1,0 +1,10 @@
+.panel {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 65%;
+    height: 100vh;
+    background-color: var(--background-color);
+    padding: 1vw;
+    overflow-y: auto;
+  }
