@@ -6,7 +6,7 @@ import NavBar from './components/NavBar';
 import Home from './catalog/Home';
 import Projects from './catalog/Projects';
 import Art from './catalog/Art/Art';
-import OctiLab from './catalog/OctiLab';
+import OctiLab from './catalog/OctiLab/OctiLab';
 import Contact from './catalog/Contact';
 import Profile from './components/Profile';
 import Panel from './components/Panel';

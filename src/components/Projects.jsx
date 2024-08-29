@@ -41,7 +41,7 @@ function ProjectItem({ media, alt, title, year, description, details, isHovered,
         <li className="project-item" onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
             <img src={isHovered ? media.gif : media.img} alt={alt} />
             <div>
-                <p className="title">{title}</p>
+                <p className="project_title">{title}</p>
                 <p className="year">{year}</p>
                 <p className="description">{description}</p>
                 <p className="details">{details}</p>

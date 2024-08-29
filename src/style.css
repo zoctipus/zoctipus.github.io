@@ -34,7 +34,6 @@ body, html {
 
   .navBar a:hover {
     color: #555;  /* Slightly lighter shade on hover, optional */
-    text-decoration: none;  /* Ensures underline doesn't appear on hover */
   }
   
   .navBar ul {
@@ -53,4 +52,5 @@ body, html {
     right: 10px;  /* Adjust right margin to keep the logo at the corner */
     width: 100px;  /* Specify the size of your logo */
     height: auto;  /* Maintain aspect ratio */
+    z-index: 10;
   }

@@ -1,0 +1,36 @@
+/* OctiLab.css */
+.container {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    overflow: auto; /* Enable scrolling */
+  }
+  
+  .header {
+    margin-top: 10vw;
+    margin-bottom: 10vw;
+  }
+  
+  .title {
+    font-family: "Tangerine", cursive;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 4.5vw;
+    color: #000;
+    margin-right: 20vw;
+  }
+  
+  .content {
+    font-size: 1.2vw;
+    color: #333;
+    line-height: 1.6;
+    margin: 0 auto;
+    max-width: 30vw;
+    text-align: left;
+    margin-left: 40vw;
+    margin-bottom: 2vw;
+  }
+  
+  .content p {
+    margin-bottom: 0%; /* Adjusted as per your request */
+}

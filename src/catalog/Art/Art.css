@@ -6,7 +6,11 @@
     position: fixed; /* Fix the banner at the top */
     top: 0; /* Align it to the top */
     z-index: 1; /* Ensure it stays on top */
-
+    font-family: "Tangerine", cursive;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 2.5rem;
+    color: #000;
 }
 
 .art-container {

@@ -27,7 +27,7 @@
     transform: scale(0.9); /* Scale up the image on hover */
 }
 
-.title {
+.project_title {
     font-size: 1.4vw; /* Larger font size for title */
     font-weight: bold; /* Bold font for title */
     color: #333; /* Darker text color for better readability */
