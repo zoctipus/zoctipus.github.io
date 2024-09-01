@@ -5,16 +5,26 @@ import tychoImage from '../../public/panel/images/tycho.png';
 import tychoGif from '../../public/panel/videos/tycho.gif';
 import teleopImage from '../../public/panel/images/teleop.png';
 import teleopGif from '../../public/panel/videos/teleop.gif';
+import locomotionImage from '../../public/panel/images/locomotion.jpg';
+import locomotionGif from '../../public/panel/videos/locomotion.gif';
 import './Projects.css'
 // Define the data fetching function
 export const getProjects = () => [
+  {
+    id: 4,
+    media: { img: locomotionImage, gif: locomotionGif },
+    title: "Locomotions in Isaac Lab",
+    year: "2024 July",
+    description: "Locomotion RL with Different Robot Morphologies",
+    details:"H1, R1, A1, AnymalB, AnymalD, Cassie",
+  },
   {
     id: 3,
     media: { img: teleopImage, gif: teleopGif },
     title: "Rokoko Glove Teleoperation",
     year: "2024 June",
     description: "Teleoperation in Isaac Lab",
-    details:"Teleoperation, Rokoko Glove, ROS",
+    details:"Teleoperation, Rokoko Glove, Multi-Constraints IK Solver",
   },
   {
     id: 2,
