@@ -1,0 +1,118 @@
+.works-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content horizontally */
+    text-align: center; /* Center the text */
+    background: transparent; /* Ensure background is transparent */
+    position: relative; /* Position it relative to the works list */
+}
+
+.works-banner {
+    background-color: rgba(255, 255, 255, 0.0); /* Transparent background */
+    text-align: center; /* Center the text */
+    width: 100%; /* Full width */
+    padding: 10px 0; /* Add some padding */
+    position: fixed; /* Fix the banner at the top */
+    top: 0; /* Align it to the top */
+    z-index: 1; /* Ensure it stays on top */
+}
+
+.works-title {
+    font-size: 2rem; /* Adjust the size as needed */
+    color: #333; /* Adjust the color as needed */
+    text-align: center; /* Center the title */
+    margin-bottom: 0.5rem; /* Space below the title */
+    font-family: "Tangerine", cursive; /* Set the font */
+    transition: opacity 0.3s ease; /* Smooth transition for hiding */
+}
+
+.works-title.hidden {
+    opacity: 0; /* Hide the title */
+    transition: opacity 0.3s ease; /* Ensure smooth transition */
+}
+
+/* Removed .works-subtitle */
+
+.search-bar {
+    margin-top: 1rem; /* Space below the title */
+    padding: 0.5rem 1rem; /* Padding inside the search bar */
+    border-radius: 25px; /* Rounded corners */
+    background-color: #c5c5c5; /* Gray background */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    display: inline-block; /* Inline block to fit content */
+}
+
+.search-bar input {
+    border: none; /* Remove default border */
+    outline: none; /* Remove default outline */
+    font-size: 1rem; /* Adjust font size */
+    width: 200px; /* Adjust width */
+    background-color: #c5c5c5; /* Match the background color of the search bar */
+    color: #000; /* Set text color to black */
+    padding: 0.5rem; /* Add padding inside the input */
+}
+
+.works-list {
+    list-style: none;
+    padding-top: 15vh; /* Adjust padding to avoid overlap with header */
+    width: 100vw;
+    overflow-y: auto; /* Enable vertical scrolling */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the rows horizontally */
+    row-gap: 8vh;
+    box-sizing: border-box; /* Include padding in the height calculation */
+    z-index: 0; /* Ensure it is below the title container */
+}
+
+.work-row {
+    display: flex;
+    justify-content: center; /* Center the images within the row */
+    max-width: 70vw;
+    gap: 8vw; /* Space between images */
+}
+
+.work-item {
+    flex: 0 0 48%; /* Each item takes up 48% of the row width */
+    font-size: 1.1rem;
+    display: flex;
+    margin: 0; /* Remove margin */
+    text-align: left; /* Align text to the left */
+    align-items: flex-start; /* Align items to the left */  
+    flex-direction: column;
+}
+
+.work-item img {
+    width: 100%; /* Full width of the item */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensures the image covers the area without distorting */
+    transition: transform 0.3s ease; /* Apply transition to transform property */
+    margin-bottom: 2vw;
+}
+
+.work-item:hover img {
+    transform: scale(0.9);
+}
+
+.work-title {
+    font-size: 1.1vw;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0vw;
+}
+
+.work-year {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 1vw;
+}
+
+.work-description, .work-details {
+    font-size: 0.9rem;
+    color: #444;
+    margin-bottom: 5px;
+}
+
+.work-details {
+    font-style: italic;
+}

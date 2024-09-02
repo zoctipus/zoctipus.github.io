@@ -7,7 +7,8 @@ import teleopImage from '../../public/panel/images/teleop.png';
 import teleopGif from '../../public/panel/videos/teleop.gif';
 import locomotionImage from '../../public/panel/images/locomotion.jpg';
 import locomotionGif from '../../public/panel/videos/locomotion.gif';
-import './Projects.css'
+import './Projects.css';
+
 // Define the data fetching function
 export const getProjects = () => [
   {
@@ -51,10 +52,10 @@ function ProjectItem({ media, alt, title, year, description, details, isHovered,
         <li className="project-item" onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
             <img src={isHovered ? media.gif : media.img} alt={alt} />
             <div>
-                <p className="project_title">{title}</p>
-                <p className="year">{year}</p>
-                <p className="description">{description}</p>
-                <p className="details">{details}</p>
+                <p className="project-item__title">{title}</p>
+                <p className="project-item__year">{year}</p>
+                <p className="project-item__description">{description}</p>
+                <p className="project-item__details">{details}</p>
             </div>
         </li>
     );

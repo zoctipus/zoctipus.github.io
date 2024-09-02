@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './style.css';
 import NavBar from './components/NavBar';
 import Home from './catalog/Home';
-import Projects from './catalog/Projects';
+import Projects from './catalog/Works/Works';
 import Art from './catalog/Art/Art';
 import OctiLab from './catalog/OctiLab/OctiLab';
 import Contact from './catalog/Contact';
