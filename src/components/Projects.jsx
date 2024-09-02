@@ -13,10 +13,10 @@ export const getProjects = () => [
   {
     id: 4,
     media: { img: locomotionImage, gif: locomotionGif },
-    title: "Locomotions in Isaac Lab",
+    title: "Locomotions across Robot Morphologies",
     year: "2024 July",
     description: "Locomotion RL with Different Robot Morphologies",
-    details:"H1, R1, A1, AnymalB, AnymalD, Cassie",
+    details:"H1, G1, A1, AnymalB, AnymalD, Cassie",
   },
   {
     id: 3,
