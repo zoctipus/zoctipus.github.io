@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './style.css';
 import NavBar from './components/NavBar';
 import Home from './catalog/Home';
@@ -11,10 +10,11 @@ import Contact from './catalog/Contact';
 import Profile from './components/Profile';
 import Panel from './components/Panel';
 import Logo from '../public/profile/myavatar.png';  // Ensure the path is correct
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <Router>
       <div className="App">
         <NavBar />
         <img src={Logo} alt="Logo" className="app-logo" />
@@ -26,7 +26,7 @@ const App = () => {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
-    </BrowserRouter>
+    </Router>
   );
 };
 
