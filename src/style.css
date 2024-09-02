@@ -13,11 +13,11 @@ body, html {
   }
   
   .navBar {
-    position: absolute; /* Fixed position */
+    position: fixed; /* Fix position so it stays in place */
     top: 7%; /* Align to the top */
     left: 2%; /* Align to the left */
     width: 5%; /* Fixed width, adjust as needed */
-    height: 15%; /* Full viewport height */
+    height: 15%; /* Fixed height */
     background-color: var(--background-color); /* White background */
     padding: 2vw;
     display: flex;
@@ -25,16 +25,14 @@ body, html {
     justify-content: start; /* Align items to start from the top */
     font-size: 1vw;
     line-height: 3vh;
-  }
+    z-index: 10; /* Ensure the nav bar is on top */
+}
 
   .navBar a {
     color: #000;  /* Change the color to black or any other color as per your design */
     text-decoration: none;  /* Removes underline */
   }
 
-  .navBar a:hover {
-    color: #555;  /* Slightly lighter shade on hover, optional */
-  }
   
   .navBar ul {
     list-style: none;
@@ -52,5 +50,5 @@ body, html {
     right: 10px;  /* Adjust right margin to keep the logo at the corner */
     width: 100px;  /* Specify the size of your logo */
     height: auto;  /* Maintain aspect ratio */
-    z-index: 10;
   }
+  
