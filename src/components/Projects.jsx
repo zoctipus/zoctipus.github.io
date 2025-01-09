@@ -22,8 +22,8 @@ export const getProjects = () => [
     year: "2025 Jan",
     description: "Entropy Sampler",
     details:"Formulate Reinforment Learning MDP with Second Law of Thermodynamics",
-    linkType: "LOCAL",           // Has a local detail route
-    routePath: "ycb"      // We'll use `/projects/locomotion`
+    linkType: "EXTERNAL",           // Has a local detail route
+    routePath: "https://zoctipus.github.io/ycb/"      // We'll use `/projects/locomotion`
   },
   {
     id:5,
