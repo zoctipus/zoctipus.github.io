@@ -1,6 +1,7 @@
+// Panel.jsx
 import React, { Component } from 'react';
-import './Panel.css';
 import ProjectItem, { getProjects } from './Projects';
+import './Panel.css';
 
 class Panel extends Component {
   state = { hoveredItem: null };
@@ -21,12 +22,16 @@ class Panel extends Component {
           {projects.map(project => (
             <ProjectItem
               key={project.id}
+              id={project.id}
               media={project.media}
               alt={`Image for ${project.title}`}
               title={project.title}
               year={project.year}
               description={project.description}
               details={project.details}
+              linkType={project.linkType}
+              routePath={project.routePath}
+              externalUrl={project.externalUrl}
               isHovered={this.state.hoveredItem === project.id}
               onMouseEnter={() => this.handleMouseEnter(project.id)}
               onMouseLeave={this.handleMouseLeave}

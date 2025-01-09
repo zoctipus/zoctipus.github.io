@@ -12,6 +12,9 @@ import Panel from './components/Panel';
 import Logo from '../public/profile/myavatar.png';  // Ensure the path is correct
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 
+// Import our custom ProjectsRouter
+import ProjectsRouter from './catalog/Works/ProjectsRouter';
+
 const App = () => {
   return (
     <Router>
@@ -20,7 +23,8 @@ const App = () => {
         <img src={Logo} alt="Logo" className="app-logo" />
         <Routes>
           <Route path="/" element={<div><Profile /><Panel /><Home /></div>} />
-          <Route path="/projects" element={<Projects />} />
+          {/* All /projects/* routes are handled by ProjectsRouter */}
+          <Route path="/projects/*" element={<ProjectsRouter />} />
           <Route path="/art" element={<Art />} />
           <Route path="/octilab" element={<OctiLab />} />
           <Route path="/contact" element={<Contact />} />

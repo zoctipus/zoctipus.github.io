@@ -1,0 +1,42 @@
+/* Contact.css */
+
+.contact-container {
+    width: 100%;
+    margin: 0 auto;
+    text-align: left;
+    font-size: 1.2vw;
+    color: #333;
+    line-height: 1.6;
+    max-width: 35vw;
+    margin-left: 40vw;  /* Similar to your existing .content styling */
+    margin-top: 10vw;
+    margin-bottom: 10vw;
+    font-family: "Josefin Slab", serif; /* or "Tangerine", if you prefer */
+  }
+  
+  .contact-title {
+    font-family: "Tangerine", cursive; 
+    font-size: 3vw;
+    margin-bottom: 2vw;
+    color: #000;
+  }
+  
+  .contact-intro {
+    margin-bottom: 2vw;
+  }
+  
+  .contact-info p {
+    margin-bottom: 1vw;
+    font-size: 1.1vw;
+  }
+  
+  .contact-info a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .contact-info a:hover {
+    text-decoration: underline;
+  }
+  
