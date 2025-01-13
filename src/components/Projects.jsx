@@ -22,18 +22,19 @@ export const getProjects = () => [
     year: "2025 Jan",
     description: "Entropy Sampler",
     details:"Formulate Reinforment Learning MDP with Second Law of Thermodynamics",
-    linkType: "EXTERNAL",           // Has a local detail route
-    routePath: "https://zoctipus.github.io/ycb/"
+    linkType: "EXTERNAL",
+    externalUrl: "https://zoctipus.github.io/ycb/"
   },
   {
-    id:5,
+    id: 5,
     media: { img: evolution, gif: evolution },
     title: "Parental Guidance: Evolutionary Distillation",
     year: "2024 Sept",
     description: "Evolution algorithm",
-    details:"",
+    //  Wrap "Best Paper Reward" with a span
+    details: "<span class='best-paper'>Best Paper</span> at CoRL MAPoDeL Workshop",
     linkType: "EXTERNAL",
-    externalUrl: "https://openreview.net/forum?id=d2VTtWOCMm&referrer=%5BAuthor%20Console%5D(%2Fgroup%3Fid%3Dcorl.org%2F2024%2FWorkshop%2FMAPoDeL%2FAuthors%23your-submissions)" 
+    externalUrl: "https://openreview.net/forum?id=d2VTtWOCMm&referrer=%5BAuthor%20Console%5D(%2Fgroup%3Fid%3Dcorl.org%2F2024%2FWorkshop%2FMAPoDeL%2FAuthors%23your-submissions)"
   },
   {
     id: 4,
@@ -126,7 +127,10 @@ function ProjectItem({
           <p className="project-item__title">{title}</p>
           <p className="project-item__year">{year}</p>
           <p className="project-item__description">{description}</p>
-          <p className="project-item__details">{details}</p>
+          <p
+            className="project-item__details"
+            dangerouslySetInnerHTML={{ __html: details }}
+          />
         </div>
       </>
     );

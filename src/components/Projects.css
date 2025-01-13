@@ -93,3 +93,8 @@
     font-style: italic;
   }
   
+  .best-paper {
+    color: #cc2d27;
+    font-weight: bold; /* optional */
+  }
+  
