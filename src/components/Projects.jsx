@@ -10,31 +10,52 @@ import locomotionImage from '../../public/panel/images/locomotion.jpg';
 import locomotionGif from '../../public/panel/videos/locomotion.gif';
 import evolution from '../../public/panel/images/evolution.png'
 import ycb from '../../public/panel/images/ycb.png'
+import tka from '../../public/panel/images/tka.jpg'
 
 import './Projects.css';
 
 // Define the data fetching function
 export const getProjects = () => [
+  // {
+  //   id:6,
+  //   media: { img: ycb, gif: ycb },
+  //   title: "YCB Entropy Sampler",
+  //   year: "2025 Jan",
+  //   description: "Entropy Sampler",
+  //   details:"Formulate Reinforment Learning MDP with Second Law of Thermodynamics",
+  //   linkType: "EXTERNAL",
+  //   externalUrl: "https://zoctipus.github.io/ycb/"
+  // },
   {
-    id:6,
+    id:8,
     media: { img: ycb, gif: ycb },
-    title: "YCB Entropy Sampler",
+    title: "Entropy Sampler(In progress)",
     year: "2025 Jan",
-    description: "Entropy Sampler",
+    description: "",
     details:"Formulate Reinforment Learning MDP with Second Law of Thermodynamics",
     linkType: "EXTERNAL",
     externalUrl: "https://zoctipus.github.io/ycb/"
   },
   {
-    id: 5,
+    id: 6,
     media: { img: evolution, gif: evolution },
     title: "Parental Guidance: Evolutionary Distillation",
     year: "2024 Sept",
     description: "Evolution algorithm",
     //  Wrap "Best Paper Reward" with a span
-    details: "<span class='best-paper'>Best Paper</span> at CoRL MAPoDeL Workshop",
+    details: "<span class='me'>Zhengyu Zhang</span>, Quanquan Peng, Rosario Scalise, Bryon Boots, \
+        <p><span class='best-paper'>Best Paper</span> at CoRL MAPoDeL Workshop",
     linkType: "EXTERNAL",
     externalUrl: "https://openreview.net/forum?id=d2VTtWOCMm&referrer=%5BAuthor%20Console%5D(%2Fgroup%3Fid%3Dcorl.org%2F2024%2FWorkshop%2FMAPoDeL%2FAuthors%23your-submissions)"
+  },
+  {
+    id: 7,
+    media: { img: tka, gif: tka },
+    title: "ATK: Automatic Task-driven Keypoint selection for Policy Transfer from Simulation to Real World",
+    year: "2025 Jan",
+    description: "In Submission to RSS",
+    details:"Yunchu Zhang, <span class='me'>Zhengyu Zhang</span>, Liyiming Ke, Siddhartha Srinivasa and Abhishek Gupta",
+    linkType: "NONE", 
   },
   {
     id: 4,
