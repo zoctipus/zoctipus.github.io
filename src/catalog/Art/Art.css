@@ -53,3 +53,28 @@
     font-size: 14px;
     color: #333;
 }
+
+/* ---------- Mobile / narrow screens ---------- */
+@media (max-width: 820px) {
+    .art-banner {
+        font-size: 2rem;
+    }
+
+    .art-container {
+        height: auto;
+        overflow-y: visible;
+        padding-top: 80px;
+        padding-bottom: 32px;
+    }
+
+    .art-row {
+        max-width: 92vw;
+        gap: 16px;
+        margin-bottom: 16px;
+    }
+
+    .art-item img {
+        max-height: 80vw;
+        margin: 0;
+    }
+}

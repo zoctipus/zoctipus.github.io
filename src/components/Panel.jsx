@@ -4,14 +4,12 @@ import ProjectItem, { getProjects } from './Projects';
 import './Panel.css';
 
 class Panel extends Component {
-  state = { hoveredItem: null };
+  // The active item stays active until another is hovered — so a video keeps
+  // playing after the mouse leaves, and only one plays at a time.
+  state = { activeItem: null };
 
   handleMouseEnter = (id) => {
-    this.setState({ hoveredItem: id });
-  }
-
-  handleMouseLeave = () => {
-    this.setState({ hoveredItem: null });
+    this.setState({ activeItem: id });
   }
 
   render() {
@@ -32,9 +30,8 @@ class Panel extends Component {
               linkType={project.linkType}
               routePath={project.routePath}
               externalUrl={project.externalUrl}
-              isHovered={this.state.hoveredItem === project.id}
+              isHovered={this.state.activeItem === project.id}
               onMouseEnter={() => this.handleMouseEnter(project.id)}
-              onMouseLeave={this.handleMouseLeave}
             />
           ))}
         </ul>

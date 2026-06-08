@@ -7,6 +7,7 @@ function Profile() {
     <div className="profile">
       <img src={ProfilePhoto} alt="Octi Zhang" className="profile-picture" />
       <h1>Octi Zhang</h1>
+      <p className="name-alt">章正宇</p>
       <p className="introduction">
       My interest lies at the intersection of AI, Graphics, and Physics. 
       I'm fascinated by creating simulated environments that resembles real world constraints, 

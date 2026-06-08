@@ -2,7 +2,8 @@
 
 import React from 'react';
 import goHuskyImg from '../../../../public/panel/images/goHusky.png'
-import goHuskyGif from '../../../../public/panel/videos/goHusky.gif'; // as needed
+
+const goHuskyVideo = 'https://zoctipus.s3.us-west-004.backblazeb2.com/panel/videos/goHusky.mp4';
 
 function GoHuskyDetail() {
   return (
@@ -21,7 +22,7 @@ function GoHuskyDetail() {
       <p>
         <strong>Media:</strong>
       </p>
-      <img src={goHuskyGif} alt="Go Husky In Action" style={{ maxWidth: '300px' }} />
+      <video src={goHuskyVideo} autoPlay loop muted playsInline style={{ maxWidth: '300px' }} />
       {/* Add any other project details you'd like */}
     </div>
   );

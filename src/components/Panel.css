@@ -8,3 +8,15 @@
     padding: 1vw;
     overflow-y: auto;
   }
+
+  /* ---------- Mobile / narrow screens ---------- */
+  @media (max-width: 820px) {
+    .panel {
+      position: static;
+      width: 100%;
+      height: auto;
+      box-sizing: border-box;
+      padding: 8px 12px 32px;
+      overflow-y: visible;
+    }
+  }

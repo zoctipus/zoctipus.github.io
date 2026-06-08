@@ -20,7 +20,7 @@ function Contact() {
         feel free to use the following info:
       </p>
       <div className="contact-info">
-        <p><strong>Email:</strong> octipus[at]cs[dot]washington[dot]edu</p>
+        <p><strong>Email:</strong> zzyoctopus[at]gmail[dot]com</p>
         <p><strong>wx:</strong> ooctipus</p>
       </div>
     </div>

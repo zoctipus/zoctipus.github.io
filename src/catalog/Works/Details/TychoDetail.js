@@ -2,7 +2,8 @@
 
 import React from 'react';
 import tychoImage from '../../../../public/panel/images/tycho.png';
-import tychoGif from '../../../../public/panel/videos/tycho.gif';
+
+const tychoVideo = 'https://zoctipus.s3.us-west-004.backblazeb2.com/panel/videos/tycho.mp4';
 
 function TychoDetail() {
   return (
@@ -12,7 +13,7 @@ function TychoDetail() {
       <p>Year: 2024 March</p>
       <p>Description: RL in Isaac Lab</p>
       <p>Details: Fine Manipulation, Soft Body, Articulation Object</p>
-      <img src={tychoGif} alt="Tycho in action" style={{ maxWidth: '300px' }} />
+      <video src={tychoVideo} autoPlay loop muted playsInline style={{ maxWidth: '300px' }} />
     </div>
   );
 }

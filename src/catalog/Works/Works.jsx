@@ -54,7 +54,6 @@ function Works() {
                 details={item.details}
                 isHovered={hoveredItem === item.id}
                 onMouseEnter={() => setHoveredItem(item.id)}
-                onMouseLeave={() => setHoveredItem(null)}
               />
             ))}
           </div>
