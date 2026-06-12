@@ -8,6 +8,7 @@
     /* Horizontal layout: media on left, text on right */
     display: flex;
     align-items: flex-start;
+    justify-content: center; /* keep the cover+text block balanced on wide screens */
     margin-bottom: 2vw; /* spacing between items */
   }
 

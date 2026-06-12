@@ -31,8 +31,7 @@ export const getProjects = () => [
     title: "A Balanced Data Diet: Mega-Scale RL for Robot Control",
     year: "2026 June",
     description: "Success-Guided Sampling",
-    details: "Success-Guided Sampling allocates parallel simulation across task configurations by current success rate, scaling RL past one million environments for locomotion and contact-rich manipulation.\
-        <p>In Submission to CoRL 2026",
+    details: "Success-Guided Sampling allocates parallel simulation across task configurations by current success rate, scaling RL past one million environments for locomotion and contact-rich manipulation.",
     linkType: "EXTERNAL",
     externalUrl: "https://sgs-rl.github.io/"
   },
