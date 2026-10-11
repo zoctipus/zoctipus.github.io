@@ -41,6 +41,7 @@ export const getProjects = () => [
         Abhishek Gupta, Rosario Scalise&dagger;, Byron Boots&dagger;\
         <p>CoRL 2026\
         <span class='project-links'>\
+          <a href='https://sgs-rl.github.io/' target='_blank' rel='noopener noreferrer'>Website</a>\
           <a href='https://arxiv.org/abs/2610.12465' target='_blank' rel='noopener noreferrer'>Paper</a>\
         </span>",
     linkType: "EXTERNAL",
@@ -59,7 +60,10 @@ export const getProjects = () => [
     description: "Diverse resets for sim-to-real dexterity",
     details: "Patrick Yin, Tyler Westenbroek, <span class='me'>Octi Zhang</span>, Joshua Tran, Ignacio Dagnino, \
         Eeshani Shilamkar, Numfor Mbiziwo-Tiapo, Simran Bagaria, Xinlei Liu, Galen Mullins, Andrey Kolobov, Abhishek Gupta\
-        <p>ICLR 2026",
+        <p>ICLR 2026\
+        <span class='project-links'>\
+          <a href='https://weirdlabuw.github.io/omnireset/' target='_blank' rel='noopener noreferrer'>Website</a>\
+        </span>",
     linkType: "EXTERNAL",
     externalUrl: "https://weirdlabuw.github.io/omnireset/"
   },
@@ -81,18 +85,27 @@ export const getProjects = () => [
     description: "Evolution algorithm",
     //  Wrap "Best Paper Reward" with a span
     details: "<span class='me'>Zhengyu(Octi) Zhang</span>, Quanquan Peng, Rosario Scalise, Byron Boots, \
-        <p><span class='best-paper'>Best Paper</span> at CoRL MAPoDeL Workshop",
+        <p><span class='best-paper'>Best Paper</span> at CoRL MAPoDeL Workshop\
+        <span class='project-links'>\
+          <a href='https://openreview.net/forum?id=d2VTtWOCMm&referrer=%5BAuthor%20Console%5D(%2Fgroup%3Fid%3Dcorl.org%2F2024%2FWorkshop%2FMAPoDeL%2FAuthors%23your-submissions)' target='_blank' rel='noopener noreferrer'>Paper</a>\
+        </span>",
     linkType: "EXTERNAL",
     externalUrl: "https://openreview.net/forum?id=d2VTtWOCMm&referrer=%5BAuthor%20Console%5D(%2Fgroup%3Fid%3Dcorl.org%2F2024%2FWorkshop%2FMAPoDeL%2FAuthors%23your-submissions)"
   },
   {
     id: 7,
     media: { img: tka },
-    title: "ATK: Automatic Task-driven Keypoint selection for Policy Transfer from Simulation to Real World",
-    year: "2025 Jan",
-    description: "In Submission to RSS",
-    details:"Yunchu Zhang, <span class='me'>Zhengyu(Octi) Zhang</span>, Liyiming Ke, Siddhartha Srinivasa and Abhishek Gupta",
-    linkType: "NONE", 
+    title: "ATK: Automatic Task-driven Keypoint Selection for Robust Policy Learning",
+    year: "2025 Oct",
+    description: "Sim-to-real policy transfer via task-driven keypoints",
+    details: "Yunchu Zhang, Shubham Mittal, <span class='me'>Zhengyu(Octi) Zhang</span>, Liyiming Ke, Siddhartha Srinivasa, Abhishek Gupta\
+        <p>CoRL 2025\
+        <span class='project-links'>\
+          <a href='https://yunchuzhang.github.io/ATK/' target='_blank' rel='noopener noreferrer'>Website</a>\
+          <a href='https://arxiv.org/abs/2506.13867' target='_blank' rel='noopener noreferrer'>Paper</a>\
+        </span>",
+    linkType: "EXTERNAL",
+    externalUrl: "https://yunchuzhang.github.io/ATK/"
   },
   {
     id: 4,
@@ -118,7 +131,10 @@ export const getProjects = () => [
     title: "Project Go Husky",
     year: "2023 Sept",
     description: "ML-Agent in Unity",
-    details: "Husky joyously explores a vibrant UW campus, inviting you to come and play fetch with him",
+    details: "Husky joyously explores a vibrant UW campus, inviting you to come and play fetch with him\
+        <span class='project-links'>\
+          <a href='https://github.com/zoctipus/goHusky' target='_blank' rel='noopener noreferrer'>GitHub</a>\
+        </span>",
     linkType: "EXTERNAL",
     externalUrl: "https://github.com/zoctipus/goHusky"
   },

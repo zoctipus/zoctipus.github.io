@@ -3,10 +3,22 @@ import './About.css';
 import goHuskyPoster from '../../public/panel/images/goHusky.png';
 import physicsNote1 from '../../public/about/physics_note1.jpg';
 import physicsNote2 from '../../public/about/physics_note2.jpg';
+import artAnne from '../../public/Art/anne.jpg';
+import artAppleGirl from '../../public/Art/apple_girl.jpg';
+import artBlondePortrait from '../../public/Art/blonde_protrait.jpg';
+import artMiku from '../../public/Art/miku.jpg';
+import artPortraitStudy from '../../public/Art/portrait_study.jpg';
+import artBargue1 from '../../public/Art/bargue1.jpg';
+import artBargue3 from '../../public/Art/bargue3.jpg';
+import artLineVanity from '../../public/Art/line_vanity.png';
 
 const goHuskyVideo = 'https://zoctipus.s3.us-west-004.backblazeb2.com/panel/videos/goHusky.mp4';
 
-function NoteCarousel({ images, caption }) {
+// slides: array of arrays — each inner array is one slide (1 or 2 images)
+// images: flat array (legacy) — each image becomes its own single-image slide
+function NoteCarousel({ images, slides: slidesProp, caption, className = '' }) {
+  const slides = slidesProp ?? images.map(src => [src]);
+
   const [active, setActive] = React.useState(0);
   const trackRef = React.useRef(null);
 
@@ -24,35 +36,41 @@ function NoteCarousel({ images, caption }) {
   };
 
   return (
-    <figure className="about-figure">
+    <figure className={`about-figure${className ? ' ' + className : ''}`}>
       <div className="note-carousel">
         <div className="note-carousel__track" ref={trackRef} onScroll={handleScroll}>
-          {images.map((src, i) => (
-            <div className="note-carousel__slide" key={i}>
-              <img src={src} alt={`Handwritten note ${i + 1}`} />
-            </div>
-          ))}
+          {slides.map((entry, i) => {
+            const group = Array.isArray(entry) ? entry : entry.images;
+            const small = !Array.isArray(entry) && entry.small;
+            return (
+              <div className="note-carousel__slide" key={i} data-count={group.length} data-small={small || undefined}>
+                {group.map((src, j) => (
+                  <img key={j} src={src} alt={`Image ${i * 2 + j + 1}`} />
+                ))}
+              </div>
+            );
+          })}
         </div>
         <button
           type="button"
           className="note-carousel__arrow note-carousel__arrow--prev"
           onClick={() => goTo(Math.max(0, active - 1))}
-          aria-label="Previous note"
+          aria-label="Previous"
         >‹</button>
         <button
           type="button"
           className="note-carousel__arrow note-carousel__arrow--next"
-          onClick={() => goTo(Math.min(images.length - 1, active + 1))}
-          aria-label="Next note"
+          onClick={() => goTo(Math.min(slides.length - 1, active + 1))}
+          aria-label="Next"
         >›</button>
         <div className="note-carousel__dots">
-          {images.map((_, i) => (
+          {slides.map((_, i) => (
             <button
               type="button"
               key={i}
               className={`note-carousel__dot${i === active ? ' is-active' : ''}`}
               onClick={() => goTo(i)}
-              aria-label={`Note ${i + 1}`}
+              aria-label={`Slide ${i + 1}`}
             />
           ))}
         </div>
@@ -74,6 +92,18 @@ function About() {
         never a strong student. My grades were mediocre, and UW was the best non-art school
         that accepted me.
       </p>
+
+      <NoteCarousel
+        slides={[
+          [artMiku],
+          { images: [artLineVanity], small: true },
+          [artAnne, artBlondePortrait],
+          [artPortraitStudy, artAppleGirl],
+          { images: [artBargue1], small: true },
+        ]}
+        caption="Figure drawing and oil painting — work from primary school through college."
+        className="about-figure--art"
+      />
 
       <p>
         But I never put the pencil down. Through my first two years of college I kept drawing, and

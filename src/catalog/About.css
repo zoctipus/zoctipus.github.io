@@ -61,6 +61,29 @@
   .about-figure {
     margin: 2em 0;
   }
+  .about-figure--art {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .about-figure--art .note-carousel__slide {
+    display: flex;
+    gap: 8px;
+    aspect-ratio: 4 / 3;
+  }
+  .about-figure--art .note-carousel__slide img {
+    flex: 1;
+    min-width: 0;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 4px;
+    box-shadow: none;
+  }
+  .about-figure--art .note-carousel__slide[data-small] img {
+    object-fit: contain;
+    object-position: center;
+  }
   .about-figure img,
   .about-figure video {
     display: block;
