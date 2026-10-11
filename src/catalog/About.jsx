@@ -134,7 +134,7 @@ function About() {
           playsInline
           preload="metadata"
         />
-        <figcaption>Project Go Husky: a husky learning to explore the <a href="https://www.washington.edu/campus-life/campus-quad/" target="_blank" rel="noopener noreferrer">UW quad</a>. The moment it clicked.</figcaption>
+        <figcaption>Project Go Husky: a husky learning to explore the <a href="https://www.washington.edu/" target="_blank" rel="noopener noreferrer">University of Washington</a> quad. The moment it clicked.</figcaption>
       </figure>
 
       <p>

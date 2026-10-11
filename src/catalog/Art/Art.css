@@ -31,7 +31,7 @@
     justify-content: center;
     margin-bottom: 6px;
     width: 100%;
-    max-width: 80vw;
+    max-width: min(80vw, 1200px);
     gap: 8px;
 }
 
