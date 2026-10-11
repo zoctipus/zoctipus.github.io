@@ -112,7 +112,7 @@ function About() {
 
       <NoteCarousel
         images={[physicsNote1, physicsNote2]}
-        caption="Thermodynamics and statistical mechanics, in my own hand, where the equations and the drawings refused to stay apart."
+        caption="Thermodynamics and statistical mechanics notes from college."
       />
 
       <p>
@@ -155,10 +155,10 @@ function About() {
       </p>
 
       <p>
-        But this was the art I had chased my entire life. <em>You do not give up on that.</em>
+        But this was the art I had chased my entire life. <em>You do not give up on that.</em>{' '}
         So I kept going. Without an advisor, I worked more or less as an independent researcher,
         building simulation and working with PhD students on their projects. That work led to
-        more collaborations at UW and beyond, and eventually to a job on NVIDIA's Isaac Lab. I
+        more collaborations at UW and beyond, and eventually to a job on NVIDIA's <a href="https://github.com/isaac-sim/IsaacLab" target="_blank" rel="noopener noreferrer">Isaac Lab</a>. I
         have been lucky to work with great people along the way.
       </p>
 
