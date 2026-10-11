@@ -3,9 +3,9 @@
 .about-container {
     width: 100%;
     margin: 8vw auto 8vw 38vw; /* offset to clear the left nav, like Contact/OctiLab */
-    max-width: 38vw;
+    max-width: 36em;
     text-align: left;
-    font-size: clamp(15px, 1.2vw, 18px);
+    font-size: 1.125rem;
     color: #333;
     line-height: 1.8;
     font-family: "Josefin Slab", serif;
