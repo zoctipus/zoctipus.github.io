@@ -5,10 +5,10 @@ import NavBar from './components/NavBar';
 import Home from './catalog/Home';
 import Projects from './catalog/Works/Works';
 import Art from './catalog/Art/Art';
-import OctiLab from './catalog/OctiLab/OctiLab';
+// NOTE: Octi Lab page is kept in the repo but not routed/linked.
+// import OctiLab from './catalog/OctiLab/OctiLab';
 import Contact from './catalog/Contact';
-// NOTE: About page is intentionally kept in the repo but not routed/linked yet.
-// import About from './catalog/About';
+import About from './catalog/About';
 import Logo from '../public/profile/myavatar.png';  // Ensure the path is correct
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 
@@ -26,8 +26,8 @@ const App = () => {
           {/* All /projects/* routes are handled by ProjectsRouter */}
           <Route path="/projects/*" element={<ProjectsRouter />} />
           <Route path="/art" element={<Art />} />
-          <Route path="/octilab" element={<OctiLab />} />
-          {/* <Route path="/about" element={<About />} /> */}
+          {/* <Route path="/octilab" element={<OctiLab />} /> */}
+          <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>

@@ -12,6 +12,9 @@ import omniresetPegImage from '../../public/panel/images/omnireset-peg.png'
 import omniresetRectImage from '../../public/panel/images/omnireset-rectangle.png'
 import sgsImage from '../../public/panel/images/sgs.png'
 import sgsLocomotionImage from '../../public/panel/images/sgs-locomotion.png'
+import sgsRealNutImage from '../../public/panel/images/sgs-real-nut.jpg'
+import sgsRealRodImage from '../../public/panel/images/sgs-real-rod.jpg'
+import sgsRealGearImage from '../../public/panel/images/sgs-real-gear-mesh.jpg'
 
 import './Projects.css';
 
@@ -27,11 +30,19 @@ export const getProjects = () => [
     media: [
       { img: sgsImage, video: video('sgs') },
       { img: sgsLocomotionImage, video: video('sgs-locomotion') },
+      { img: sgsRealNutImage, video: video('sgs-real-nut') },
+      { img: sgsRealRodImage, video: video('sgs-real-rod') },
+      { img: sgsRealGearImage, video: video('sgs-real-gear-mesh') },
     ],
-    title: "A Balanced Data Diet: Mega-Scale RL for Robot Control",
-    year: "2026 June",
-    description: "Success-Guided Sampling",
-    details: "Success-Guided Sampling allocates parallel simulation across task configurations by current success rate, scaling RL past one million environments for locomotion and contact-rich manipulation.",
+    title: "A Balanced Data Diet: Addressing the Exploration Bottleneck in Mega-Scale RL for Robot Control",
+    year: "2026 Oct",
+    description: "Success-Guided Sampling: scaling RL past one million parallel environments",
+    details: "<span class='me'>Octi Zhang</span>*, Mateo Guaman Castro*, Patrick Yin*, Ignacio Dagnino, \
+        Abhishek Gupta, Rosario Scalise&dagger;, Byron Boots&dagger;\
+        <p>CoRL 2026\
+        <span class='project-links'>\
+          <a href='https://arxiv.org/abs/2610.12465' target='_blank' rel='noopener noreferrer'>Paper</a>\
+        </span>",
     linkType: "EXTERNAL",
     externalUrl: "https://sgs-rl.github.io/"
   },
@@ -69,7 +80,7 @@ export const getProjects = () => [
     year: "2024 Sept",
     description: "Evolution algorithm",
     //  Wrap "Best Paper Reward" with a span
-    details: "<span class='me'>Zhengyu(Octi) Zhang</span>, Quanquan Peng, Rosario Scalise, Bryon Boots, \
+    details: "<span class='me'>Zhengyu(Octi) Zhang</span>, Quanquan Peng, Rosario Scalise, Byron Boots, \
         <p><span class='best-paper'>Best Paper</span> at CoRL MAPoDeL Workshop",
     linkType: "EXTERNAL",
     externalUrl: "https://openreview.net/forum?id=d2VTtWOCMm&referrer=%5BAuthor%20Console%5D(%2Fgroup%3Fid%3Dcorl.org%2F2024%2FWorkshop%2FMAPoDeL%2FAuthors%23your-submissions)"
