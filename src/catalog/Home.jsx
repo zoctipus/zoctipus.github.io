@@ -4,7 +4,7 @@ import Panel from '../components/Panel';
 
 function Home() {
   return (
-    <div>
+    <div className="home-layout">
       <Profile />
       <Panel />
     </div>

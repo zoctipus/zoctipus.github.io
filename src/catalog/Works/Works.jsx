@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { getProjects } from '../../components/Projects.jsx';
-import WorkItems from './WorkItems.jsx';
+import ProjectItem, { getProjects } from '../../components/Projects.jsx';
 import './Works.css';
 
 function Works() {
@@ -44,16 +43,21 @@ function Works() {
         {rows.map((row, rowIndex) => (
           <div className="work-row" key={rowIndex}>
             {row.map((item) => (
-              <WorkItems
+              <ProjectItem
                 key={item.id}
+                id={item.id}
                 media={item.media}
                 alt={item.title}
                 title={item.title}
                 year={item.year}
                 description={item.description}
                 details={item.details}
+                linkType={item.linkType}
+                routePath={item.routePath}
+                externalUrl={item.externalUrl}
                 isHovered={hoveredItem === item.id}
                 onMouseEnter={() => setHoveredItem(item.id)}
+                layout="grid"
               />
             ))}
           </div>

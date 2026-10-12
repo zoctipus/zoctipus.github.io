@@ -1,8 +1,5 @@
 .panel {
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 65%;
+    flex: 0 0 62rem;   /* fixed rem — same canvas as profile, scales identically with zoom */
     height: 100vh;
     background-color: var(--background-color);
     padding: 1vw;
@@ -12,7 +9,7 @@
   /* ---------- Mobile / narrow screens ---------- */
   @media (max-width: 820px) {
     .panel {
-      position: static;
+      flex: none;
       width: 100%;
       height: auto;
       box-sizing: border-box;

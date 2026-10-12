@@ -4,12 +4,21 @@ body, html {
     height: 100%;
     font-family: var(--font-main);
     background-color: var(--background-color);
-    overflow-x: hidden; /* prevent horizontal scroll, allow vertical */
+    overflow-x: auto; /* allow canvas to scroll at high zoom */
   }
 
   .App {
     display: flex;
     height: 100vh;
+  }
+
+  /* Home page: profile + panel are flex siblings — one shared canvas */
+  .home-layout {
+    display: flex;
+    min-height: 100vh;
+    max-width: 90rem;  /* 28rem profile + 62rem panel = canvas width at 100% zoom */
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .navBar {
@@ -58,6 +67,10 @@ body, html {
       flex-direction: column;
       height: auto;
       min-height: 100vh;
+    }
+
+    .home-layout {
+      flex-direction: column;
     }
 
     /* Turn the side nav into a sticky horizontal top bar */

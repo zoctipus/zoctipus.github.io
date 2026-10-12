@@ -153,9 +153,9 @@ function ProjectItem({
   linkType,
   routePath,
   externalUrl,
-  onMouseEnter
+  onMouseEnter,
+  layout = 'side',
 }) {
-  // Title links to the project (media area is reserved for swiping)
   function renderTitle() {
     if (linkType === 'LOCAL' && routePath) {
       return <Link to={`/projects/${routePath}`} className="project-item__title">{title}</Link>;
@@ -172,7 +172,7 @@ function ProjectItem({
 
   return (
     <li
-      className="project-item"
+      className={`project-item${layout === 'grid' ? ' project-item--grid' : ''}`}
       onMouseEnter={onMouseEnter}
     >
       <div className="project-carousel">

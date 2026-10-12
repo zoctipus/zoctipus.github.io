@@ -1,115 +1,74 @@
 .works-page {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center the content horizontally */
-    text-align: center; /* Center the text */
-    background: transparent; /* Ensure background is transparent */
-    position: relative; /* Position it relative to the works list */
+    align-items: center;
+    text-align: center;
+    background: transparent;
+    position: relative;
 }
 
 .works-banner {
-    background-color: rgba(255, 255, 255, 0.0); /* Transparent background */
-    text-align: center; /* Center the text */
-    width: 100%; /* Full width */
-    padding: 10px 0; /* Add some padding */
-    position: fixed; /* Fix the banner at the top */
-    top: 0; /* Align it to the top */
-    z-index: 1; /* Ensure it stays on top */
+    background-color: rgba(255, 255, 255, 0.0);
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    z-index: 1;
 }
 
 .works-title {
-    font-size: 2rem; /* Adjust the size as needed */
-    color: #333; /* Adjust the color as needed */
-    text-align: center; /* Center the title */
-    margin-bottom: 0.5rem; /* Space below the title */
-    font-family: "Tangerine", cursive; /* Set the font */
-    transition: opacity 0.3s ease; /* Smooth transition for hiding */
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    font-family: "Tangerine", cursive;
+    transition: opacity 0.3s ease;
 }
 
 .works-title.hidden {
-    opacity: 0; /* Hide the title */
-    transition: opacity 0.3s ease; /* Ensure smooth transition */
+    opacity: 0;
 }
 
-/* Removed .works-subtitle */
-
 .search-bar {
-    margin-top: 1rem; /* Space below the title */
-    padding: 0.5rem 1rem; /* Padding inside the search bar */
-    border-radius: 25px; /* Rounded corners */
-    background-color: #c5c5c5; /* Gray background */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    display: inline-block; /* Inline block to fit content */
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    background-color: #c5c5c5;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: inline-block;
 }
 
 .search-bar input {
-    border: none; /* Remove default border */
-    outline: none; /* Remove default outline */
-    font-size: 1rem; /* Adjust font size */
-    width: 200px; /* Adjust width */
-    background-color: #c5c5c5; /* Match the background color of the search bar */
-    color: #000; /* Set text color to black */
-    padding: 0.5rem; /* Add padding inside the input */
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    width: 200px;
+    background-color: #c5c5c5;
+    color: #000;
+    padding: 0.5rem;
 }
 
 .works-list {
     list-style: none;
-    padding-top: 15vh; /* Adjust padding to avoid overlap with header */
+    padding-top: 15vh;
     width: 100vw;
-    overflow-y: auto; /* Enable vertical scrolling */
+    overflow-y: auto;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center the rows horizontally */
+    align-items: center;
     row-gap: 8vh;
-    box-sizing: border-box; /* Include padding in the height calculation */
-    z-index: 0; /* Ensure it is below the title container */
+    box-sizing: border-box;
+    z-index: 0;
 }
 
+/* Row holds two project cards; rem-based gap + max-width so cards scale with zoom */
 .work-row {
     display: flex;
-    justify-content: center; /* Center the images within the row */
-    max-width: 70vw;
-    gap: 8vw; /* Space between images */
-}
-
-.work-item {
-    flex: 0 0 48%; /* Each item takes up 48% of the row width */
-    font-size: 1.1rem;
-    display: flex;
-    margin: 0; /* Remove margin */
-    text-align: left; /* Align text to the left */
-    align-items: flex-start; /* Align items to the left */
-    flex-direction: column;
-}
-
-.work-carousel {
-    position: relative;
-    width: 100%;
-    aspect-ratio: 16 / 9;
-    margin-bottom: 2vw;
-}
-
-.work-title {
-    font-size: clamp(15px, 1.1vw, 18px);
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 0vw;
-}
-
-.work-year {
-    font-size: 0.9rem;
-    color: #666;
-    margin-bottom: 1vw;
-}
-
-.work-description, .work-details {
-    font-size: 0.9rem;
-    color: #444;
-    margin-bottom: 5px;
-}
-
-.work-details {
-    font-style: italic;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 70rem;
+    gap: 4rem;
 }
 
 /* ---------- Mobile / narrow screens ---------- */
@@ -123,14 +82,5 @@
         flex-direction: column;
         max-width: 88vw;
         gap: 36px;
-    }
-
-    .work-item {
-        flex: 1 1 100%;
-        width: 100%;
-    }
-
-    .work-item img {
-        margin-bottom: 12px;
     }
 }
