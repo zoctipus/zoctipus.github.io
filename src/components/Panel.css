@@ -2,7 +2,7 @@
     flex: 0 0 62rem;   /* fixed rem — same canvas as profile, scales identically with zoom */
     height: 100vh;
     background-color: var(--background-color);
-    padding: 1vw;
+    padding: 1rem;
     overflow-y: auto;
   }
 
