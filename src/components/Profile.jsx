@@ -8,10 +8,11 @@ function Profile() {
       <img src={ProfilePhoto} alt="Octi Zhang" className="profile-picture" />
       <h1>Octi Zhang</h1>
       <p className="name-alt">章正宇</p>
+      <p className="currently-building">currently building <a href="https://github.com/isaac-sim/Isaac Lab" target="_blank" rel="noopener noreferrer" style={{fontWeight: 900, color: '#76b900', textDecoration: 'underline'}}>Isaac Lab</a> with love 💚 at NVIDIA</p>
       <p className="introduction">
-      My interest lies at the intersection of AI, Graphics, and Physics. 
-      I'm fascinated by creating simulated environments that resembles real world constraints, 
-      and developing intelligent agents to explore within them. 
+      My interest lies at the intersection of AI, Graphics, and Physics.
+      I'm fascinated by creating simulated environments that resembles real world constraints,
+      and developing intelligent agents to explore within them.
 
       </p>
       <p className="quote">

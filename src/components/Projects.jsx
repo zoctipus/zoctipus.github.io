@@ -50,27 +50,28 @@ export const getProjects = () => [
     linkType: "EXTERNAL",
     externalUrl: "https://sgs-rl.github.io/"
   },
-  {
-    id: 11,
-    media: [
-      { img: alphaNistOverviewImage, video: video('alpha-nist-overview') },
-      { img: alphaNistAssemblyImage, video: video('alpha-nist-assembly') },
-      { img: alphaNistStrategiesImage, video: video('alpha-nist-strategies') },
-    ],
-    title: "AlphaNIST: Emergent Assembly Skills from Binary Task Rewards",
-    year: "2026 Oct",
-    description: "Contact-rich, high-precision NIST assembly from binary success rewards — no demos or hand-crafted guidance",
-    details: "<span class='me'>Octi Zhang</span>, Iretiayo Akinola, Rosario Scalise, Mateo Guaman Castro, Patrick Yin, \
-        Tobias Widmer, Miles Macklin, Chris Amevor, Dylan Turpin, Dirk Van Gelder, Jan Carius, \
-        Ankur Handa, Gavriel State, Yunrong Guo, Yashraj Narang\
-        <p>arXiv 2026\
-        <span class='project-links'>\
-          <a href='https://alpha-nist.github.io/' target='_blank' rel='noopener noreferrer'>Website</a>\
-          <a href='https://arxiv.org/abs/2610.13354' target='_blank' rel='noopener noreferrer'>Paper</a>\
-        </span>",
-    linkType: "EXTERNAL",
-    externalUrl: "https://alpha-nist.github.io/"
-  },
+  // AlphaNIST — uncomment after social promo
+  // {
+  //   id: 11,
+  //   media: [
+  //     { img: alphaNistOverviewImage, video: video('alpha-nist-overview') },
+  //     { img: alphaNistAssemblyImage, video: video('alpha-nist-assembly') },
+  //     { img: alphaNistStrategiesImage, video: video('alpha-nist-strategies') },
+  //   ],
+  //   title: "AlphaNIST: Emergent Assembly Skills from Binary Task Rewards",
+  //   year: "2026 Oct",
+  //   description: "Contact-rich, high-precision NIST assembly from binary success rewards — no demos or hand-crafted guidance",
+  //   details: "<span class='me'>Octi Zhang</span>, Iretiayo Akinola, Rosario Scalise, Mateo Guaman Castro, Patrick Yin, \
+  //       Tobias Widmer, Miles Macklin, Chris Amevor, Dylan Turpin, Dirk Van Gelder, Jan Carius, \
+  //       Ankur Handa, Gavriel State, Yunrong Guo, Yashraj Narang\
+  //       <p>arXiv 2026\
+  //       <span class='project-links'>\
+  //         <a href='https://alpha-nist.github.io/' target='_blank' rel='noopener noreferrer'>Website</a>\
+  //         <a href='https://arxiv.org/abs/2610.13354' target='_blank' rel='noopener noreferrer'>Paper</a>\
+  //       </span>",
+  //   linkType: "EXTERNAL",
+  //   externalUrl: "https://alpha-nist.github.io/"
+  // },
   {
     id: 9,
     media: [
