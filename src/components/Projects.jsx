@@ -49,8 +49,8 @@ export const getProjects = () => [
   {
     id: 10,
     media: [
-      { img: sgsImage, video: video('sgs') },
       { img: sgsLocomotionImage, video: video('sgs-locomotion') },
+      { img: sgsImage, video: video('sgs') },
       { img: sgsRealNutImage, video: video('sgs-real-nut') },
       { img: sgsRealRodImage, video: video('sgs-real-rod') },
       { img: sgsRealGearImage, video: video('sgs-real-gear-mesh') },
